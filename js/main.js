@@ -1,4 +1,4 @@
-tabs = document.querySelectorAll('.tab');
+/* tabs = document.querySelectorAll('.tab');
 tabContents = document.querySelectorAll('.tab-content');
 
 tabs.forEach(function (tab) {
@@ -22,4 +22,17 @@ function clearOutput() {
     tabs.forEach(function (tab) {
         tab.classList.remove('active');
     });
-}
+} */ 
+
+const modal = document.querySelector('.modal')
+const loginBtn = document.querySelector('.login-btn'); 
+const closeBtn = document.querySelector('.close-btn')
+
+loginBtn.addEventListener('click', () => {
+    modal.style.display = "block";
+})
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = "none";
+})
+
